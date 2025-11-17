@@ -1,0 +1,1021 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='kpi_summary' inline='true' name='federated.0snaile1jygcum1g0vssl12l951a' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='kpi_summary' name='textscan.11edt1o133pv4b1ffzqq21eq939x'>
+            <connection class='textscan' directory='C:/Users/NocTo/OneDrive/Ambiente de Trabalho/ironhack/Week 5/vanguard-ab-test' filename='kpi_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.11edt1o133pv4b1ffzqq21eq939x' name='kpi_summary.csv' table='[kpi_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='process_step' ordinal='0' />
+            <column datatype='string' name='Variation' ordinal='1' />
+            <column datatype='real' name='Drop-Off Rate (%)' ordinal='2' />
+            <column datatype='real' name='Avg Time per Step (min)' ordinal='3' />
+            <column datatype='real' name='Completion Rate (%)' ordinal='4' />
+            <column datatype='real' name='Avg Session Time (min)' ordinal='5' />
+            <column datatype='real' name='Error Rate (%)' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drop-Off Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Drop-Off Rate (%)]</local-name>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias>Drop-Off Rate (%)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Time per Step (min)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Time per Step (min)]</local-name>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias>Avg Time per Step (min)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Completion Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Completion Rate (%)]</local-name>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias>Completion Rate (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Session Time (min)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Session Time (min)]</local-name>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias>Avg Session Time (min)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Error Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Error Rate (%)]</local-name>
+            <parent-name>[kpi_summary.csv]</parent-name>
+            <remote-alias>Error Rate (%)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Variation]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Control&quot;' value='Old Interface' />
+          <alias key='&quot;Test&quot;' value='New Interface' />
+        </aliases>
+      </column>
+      <column caption='kpi_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[kpi_summary.csv_81CA886670C7452E942911D66983C82C]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Variation)' hidden='true' name='[Action (Variation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Variation]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/NocTo/AppData/Local/Temp/TableauTemp/#TableauTemp_0q30s4r1dflpdu11m2kr40vfj1n4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/16/2025 10:22:28 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>0</ordinal>
+              <family>kpi_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Variation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>kpi_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drop-Off Rate (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Drop-Off Rate (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drop-Off Rate (%)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>kpi_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Time per Step (min)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg Time per Step (min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Time per Step (min)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>kpi_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Completion Rate (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Completion Rate (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Completion Rate (%)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>kpi_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Session Time (min)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg Session Time (min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Session Time (min)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>kpi_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Error Rate (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Error Rate (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Error Rate (%)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>kpi_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[kpi_summary.csv_81CA886670C7452E942911D66983C82C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Variation:nk]' palette='orange_10_0' type='palette'>
+            <map to='#9e3d22'>
+              <bucket>&quot;Control&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;Test&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Portugal&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='kpi_summary.csv' id='kpi_summary.csv_81CA886670C7452E942911D66983C82C'>
+            <properties context=''>
+              <relation connection='textscan.11edt1o133pv4b1ffzqq21eq939x' name='kpi_summary.csv' table='[kpi_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='process_step' ordinal='0' />
+                  <column datatype='string' name='Variation' ordinal='1' />
+                  <column datatype='real' name='Drop-Off Rate (%)' ordinal='2' />
+                  <column datatype='real' name='Avg Time per Step (min)' ordinal='3' />
+                  <column datatype='real' name='Completion Rate (%)' ordinal='4' />
+                  <column datatype='real' name='Avg Session Time (min)' ordinal='5' />
+                  <column datatype='real' name='Error Rate (%)' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_EA4098C2A1EF4331A15914C33E6BB2E6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='AVG Time per Session' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='AVG Time Per Step'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt; (min)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary' name='federated.0snaile1jygcum1g0vssl12l951a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0snaile1jygcum1g0vssl12l951a'>
+            <column datatype='real' name='[Avg Time per Step (min)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Control&quot;' value='Old Interface' />
+                <alias key='&quot;Test&quot;' value='New Interface' />
+              </aliases>
+            </column>
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Avg Time per Step (min)]' derivation='Sum' name='[sum:Avg Time per Step (min):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]'>
+            <groupfilter function='level-members' level='[Variation]' user:ui-action-filter='[Action1_EA4098C2A1EF4331A15914C33E6BB2E6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0snaile1jygcum1g0vssl12l951a].[sum:Avg Time per Step (min):qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0snaile1jygcum1g0vssl12l951a].[sum:Avg Time per Step (min):qk]</rows>
+        <cols>([federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk] / [federated.0snaile1jygcum1g0vssl12l951a].[none:process_step:nk])</cols>
+      </table>
+      <simple-id uuid='{B9ED3CA7-39A8-42AB-97FD-ACA8B71226CB}' />
+    </worksheet>
+    <worksheet name='AVG Time per Session'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt; (min)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary' name='federated.0snaile1jygcum1g0vssl12l951a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0snaile1jygcum1g0vssl12l951a'>
+            <column datatype='real' name='[Avg Session Time (min)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Control&quot;' value='Old Interface' />
+                <alias key='&quot;Test&quot;' value='New Interface' />
+              </aliases>
+            </column>
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg Session Time (min)]' derivation='Sum' name='[sum:Avg Session Time (min):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0snaile1jygcum1g0vssl12l951a].[sum:Avg Session Time (min):qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0snaile1jygcum1g0vssl12l951a].[sum:Avg Session Time (min):qk]</rows>
+        <cols>[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{1D2678CC-4D5E-4570-9393-6042A646B53A}' />
+    </worksheet>
+    <worksheet name='Completetion Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;  (%)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary' name='federated.0snaile1jygcum1g0vssl12l951a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0snaile1jygcum1g0vssl12l951a'>
+            <column datatype='real' name='[Completion Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Control&quot;' value='Old Interface' />
+                <alias key='&quot;Test&quot;' value='New Interface' />
+              </aliases>
+            </column>
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Completion Rate (%)]' derivation='Sum' name='[sum:Completion Rate (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]'>
+            <groupfilter function='level-members' level='[Variation]' user:ui-action-filter='[Action1_EA4098C2A1EF4331A15914C33E6BB2E6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0snaile1jygcum1g0vssl12l951a].[sum:Completion Rate (%):qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0snaile1jygcum1g0vssl12l951a].[sum:Completion Rate (%):qk]</rows>
+        <cols>[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{DE1F9203-DC8E-4EFA-93A7-FC67F2713E8A}' />
+    </worksheet>
+    <worksheet name='Drop-Off Rate (%)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary' name='federated.0snaile1jygcum1g0vssl12l951a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0snaile1jygcum1g0vssl12l951a'>
+            <column datatype='real' name='[Drop-Off Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Control&quot;' value='Old Interface' />
+                <alias key='&quot;Test&quot;' value='New Interface' />
+              </aliases>
+            </column>
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Drop-Off Rate (%)]' derivation='Sum' name='[sum:Drop-Off Rate (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]'>
+            <groupfilter function='level-members' level='[Variation]' user:ui-action-filter='[Action1_EA4098C2A1EF4331A15914C33E6BB2E6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0snaile1jygcum1g0vssl12l951a].[sum:Drop-Off Rate (%):qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0snaile1jygcum1g0vssl12l951a].[sum:Drop-Off Rate (%):qk]</rows>
+        <cols>[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{6A09A764-4287-4379-8629-F67698F335B0}' />
+    </worksheet>
+    <worksheet name='Drop-Off Rate per Step'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt; (%)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary' name='federated.0snaile1jygcum1g0vssl12l951a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0snaile1jygcum1g0vssl12l951a'>
+            <column datatype='real' name='[Drop-Off Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Control&quot;' value='Old Interface' />
+                <alias key='&quot;Test&quot;' value='New Interface' />
+              </aliases>
+            </column>
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Drop-Off Rate (%)]' derivation='Sum' name='[sum:Drop-Off Rate (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]'>
+            <groupfilter function='level-members' level='[Variation]' user:ui-action-filter='[Action1_EA4098C2A1EF4331A15914C33E6BB2E6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0snaile1jygcum1g0vssl12l951a].[sum:Drop-Off Rate (%):qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0snaile1jygcum1g0vssl12l951a].[sum:Drop-Off Rate (%):qk]</column>
+            <column>[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0snaile1jygcum1g0vssl12l951a].[sum:Drop-Off Rate (%):qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0snaile1jygcum1g0vssl12l951a].[sum:Drop-Off Rate (%):qk]</rows>
+        <cols>([federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk] / [federated.0snaile1jygcum1g0vssl12l951a].[none:process_step:nk])</cols>
+      </table>
+      <simple-id uuid='{CD6F3423-370A-40A2-9914-1089DF897B9E}' />
+    </worksheet>
+    <worksheet name='Error Rate Per Session'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt; (%)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary' name='federated.0snaile1jygcum1g0vssl12l951a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0snaile1jygcum1g0vssl12l951a'>
+            <column datatype='real' name='[Error Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Control&quot;' value='Old Interface' />
+                <alias key='&quot;Test&quot;' value='New Interface' />
+              </aliases>
+            </column>
+            <column-instance column='[Error Rate (%)]' derivation='Avg' name='[avg:Error Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]'>
+            <groupfilter function='level-members' level='[Variation]' user:ui-action-filter='[Action1_EA4098C2A1EF4331A15914C33E6BB2E6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0snaile1jygcum1g0vssl12l951a].[Action (Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0snaile1jygcum1g0vssl12l951a].[avg:Error Rate (%):qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0snaile1jygcum1g0vssl12l951a].[avg:Error Rate (%):qk]</rows>
+        <cols>[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{3F293FFB-DCA6-4CAE-ACAD-F5BFE839FDE3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='48728' id='3' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='48698' id='5' name='AVG Time per Session' w='24743' x='586' y='1042'>
+              <layout-cache minheight='190' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#62472d' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#bc3d131b' />
+              </zone-style>
+            </zone>
+            <zone h='48698' id='10' name='Drop-Off Rate (%)' w='24744' x='25329' y='1042'>
+              <layout-cache type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#62472d' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#bc3d131b' />
+              </zone-style>
+            </zone>
+            <zone h='48698' id='11' name='Error Rate Per Session' w='24671' x='50073' y='1042'>
+              <layout-cache type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#62472d' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#bc3d131b' />
+              </zone-style>
+            </zone>
+            <zone h='48698' id='7' name='Completetion Rate' w='24670' x='74744' y='1042'>
+              <layout-cache type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#62472d' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#bc3d131b' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='49188' id='8' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98828' x='586' y='49770'>
+            <zone h='49218' id='6' name='AVG Time Per Step' w='49414' x='586' y='49740'>
+              <layout-cache type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#62472d' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#bc3d131b' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='709' h='49218' id='9' is-fixed='true' name='Drop-Off Rate per Step' w='49414' x='50000' y='49740'>
+              <layout-cache minheight='216' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#bc3d131b' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='16' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='280' h='48698' id='5' is-fixed='true' name='AVG Time per Session' w='24743' x='586' y='1042'>
+                  <layout-cache minheight='190' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#62472d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#bc3d131b' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48698' id='10' is-fixed='true' name='Drop-Off Rate (%)' w='24744' x='25329' y='1042'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#62472d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#bc3d131b' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48698' id='11' is-fixed='true' name='Error Rate Per Session' w='24671' x='50073' y='1042'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#62472d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#bc3d131b' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48698' id='7' is-fixed='true' name='Completetion Rate' w='24670' x='74744' y='1042'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#62472d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#bc3d131b' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49218' id='6' is-fixed='true' name='AVG Time Per Step' w='49414' x='586' y='49740'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#62472d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#bc3d131b' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49218' id='9' is-fixed='true' name='Drop-Off Rate per Step' w='49414' x='50000' y='49740'>
+                  <layout-cache minheight='216' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#bc3d131b' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F114A101-7AB1-4E81-970D-ADFA9318FEE7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='AVG Time per Session'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3E4F923E-9BA8-4A01-93E3-904A80C5EF64}' />
+    </window>
+    <window class='worksheet' name='AVG Time Per Step'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{032D29E3-D705-4B69-900A-F2BBEF34072D}' />
+    </window>
+    <window class='worksheet' name='Completetion Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4F17BA9E-80CA-4272-B004-F1CBD4FA36C7}' />
+    </window>
+    <window class='worksheet' name='Drop-Off Rate per Step'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{54AD9781-C4FA-4B39-8013-A16CCCCF53F2}' />
+    </window>
+    <window class='worksheet' name='Drop-Off Rate (%)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{29422ADD-A484-4BD1-B084-525ADE94B163}' />
+    </window>
+    <window class='worksheet' name='Error Rate Per Session'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0snaile1jygcum1g0vssl12l951a].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB78B15C-8C15-45FD-96DB-1760FD6F6280}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='AVG Time Per Step'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='AVG Time per Session'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Completetion Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Drop-Off Rate (%)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Drop-Off Rate per Step'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Error Rate Per Session'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{03CE8BFD-F1F5-4996-AC75-A49CEAEB5E95}' />
+    </window>
+  </windows>
+</workbook>
